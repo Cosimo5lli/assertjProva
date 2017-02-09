@@ -16,4 +16,4 @@ jdk:
 - oraclejdk8
 
 script:
-- ./script.sh mvn test
+- bash script.sh mvn test
