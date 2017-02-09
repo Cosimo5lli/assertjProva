@@ -16,8 +16,4 @@ jdk:
 - oraclejdk8
 
 script:
-- bash script.sh 
-- vcnpasswd -t "o"
-- mvn test
-- expect "Password:"
-- send "o"
+- bash script.sh mvn test
