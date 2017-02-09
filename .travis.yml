@@ -16,4 +16,4 @@ jdk:
 - oraclejdk8
 
 script:
-- script.sh "mvn -f pom.xml clean verify"
+- execute-on-script.sh mvn test
