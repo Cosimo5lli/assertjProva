@@ -13,4 +13,4 @@ jdk:
 - oraclejdk8
 
 script:
-- mvn -f assertjProva/pom.xml clean verify
+- mvn -f pom.xml clean verify
