@@ -16,4 +16,5 @@ jdk:
 - oraclejdk8
 
 script:
-- Xephyr -screen 1024x768 :50 & sleep 5 export DISPLAY=:50 metacity --sm-disable --replace 2> ~/tmp/metacity.err & mvn -f pom.xml clean verify
+- Xephyr -screen 1024x768 :50 &- sleep 5- export DISPLAY=:50- metacity --sm-disable --replace 2> ~/tmp/metacity.err & 
+- mvn -f pom.xml clean verify
