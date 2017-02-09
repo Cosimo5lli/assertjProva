@@ -1,8 +1,5 @@
 #/bin/bash
-#!/usr/bin/expect
 NEW_DISPLAY=42
-expect "Password:"
-send "000"
 DONE="no"
 
 while [ "$DONE" == "no" ]
@@ -18,7 +15,9 @@ do
   fi
 done
 
+echo "AAA"
 echo "Using first available display :${NEW_DISPLAY}"
+echo "123"
 
 OLD_DISPLAY=${DISPLAY}
 vncserver ":${NEW_DISPLAY}" -localhost -geometry 1600x1200 -depth 16
