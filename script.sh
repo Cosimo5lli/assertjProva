@@ -1,8 +1,8 @@
 #/bin/bash
+#!/usr/bin/expect
 NEW_DISPLAY=42
-vncpasswd -t a
 expect "Password:"
-send"a"
+send "000"
 DONE="no"
 
 while [ "$DONE" == "no" ]
