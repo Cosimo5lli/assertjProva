@@ -1,3 +1,4 @@
+#/bin/bash
 NEW_DISPLAY=42
 DONE="no"
 
