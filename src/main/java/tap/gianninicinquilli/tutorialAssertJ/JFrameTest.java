@@ -11,7 +11,7 @@ public class JFrameTest extends JFrame{
 		super();
 		setSize(200,200);
 		
-		JTextField textToCopy = new JTextField("textToCopy");
+		JTextField textToCopy = new JTextField();
 		textToCopy.setName("textToCopy");
 		getContentPane().add(textToCopy, BorderLayout.NORTH);
 		textToCopy.setColumns(10);
