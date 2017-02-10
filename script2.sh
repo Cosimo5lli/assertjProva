@@ -1,4 +1,4 @@
 #!/usr/bin/expect
 echo "mas"
-expect "Password:"
+expect "You will require a password to access your desktops."
 send "AAA"
