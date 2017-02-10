@@ -16,10 +16,13 @@ do
 done
 
 echo "Using first available display :${NEW_DISPLAY}"
-echo "123"
+
 OLD_DISPLAY=${DISPLAY}
+echo "ABC"
 vncserver ":${NEW_DISPLAY}" -localhost -geometry 1600x1200 -depth 16
+echo "678"
 export DISPLAY=:${NEW_DISPLAY}
+echo "123"
 
 "$@"
 
