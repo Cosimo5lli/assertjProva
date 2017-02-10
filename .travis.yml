@@ -4,8 +4,6 @@ sudo: true
 
 before_script:
 - sudo apt-get install tightvncserver
--  gunzip expect.tar.gz
- tar -xvf expect.tar
 
 cache:
   directories:
