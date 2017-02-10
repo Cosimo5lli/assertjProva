@@ -3,6 +3,7 @@ language: java
 sudo: true
 
 before_script:
+- sudo apt-get install tightvncserver
 - sudo apt-get install expect
 
 cache:
