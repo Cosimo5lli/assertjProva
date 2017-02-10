@@ -1,4 +1,5 @@
 #/bin/bash
+#!/usr/bin/expect
 NEW_DISPLAY=42
 DONE="no"
 
@@ -19,11 +20,9 @@ echo "Using first available display :${NEW_DISPLAY}"
 
 OLD_DISPLAY=${DISPLAY}
 echo "ABC"
-vncserver ":${NEW_DISPLAY}" -localhost -geometry 1600x1200 -depth 16
-#!/usr/bin/expect
 expect "Password:"
 send "aaa"
-read "Password:"
+vncserver ":${NEW_DISPLAY}" -localhost -geometry 1600x1200 -depth 16
 export DISPLAY=:${NEW_DISPLAY}
 
 
