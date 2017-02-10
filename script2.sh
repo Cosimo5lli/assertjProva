@@ -1,3 +1,3 @@
 #/bin/bash
-vncserver
+vncserver -test
 echo "aaa"
