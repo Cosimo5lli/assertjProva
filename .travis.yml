@@ -16,5 +16,4 @@ jdk:
 - oraclejdk8
 
 script:
-- vncserver-x11
 - bash script.sh mvn test
