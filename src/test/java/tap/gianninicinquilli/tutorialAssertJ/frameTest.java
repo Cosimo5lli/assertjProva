@@ -38,10 +38,18 @@ public class frameTest {
 	
 	@Test
 	public void shouldCopyTextInLabelWhenClickingButton() {
-		frameFixture.textBox("textToCopy").enterText("Somebody was");
+		frameFixture.textBox("textToCopy").enterText("Somebody");
 		frameFixture.button("copyButton").click();
-		frameFixture.label("copiedText").requireText("Somebody was");
+		frameFixture.label("copiedText").requireText("Somebody");
 	}
+	
+	@Test
+	public void shouldCopyTextInLabelWhenClickingButton2() {
+		frameFixture.textBox("textToCopy").enterText("Somebody");
+		frameFixture.button("copyButton2").click();
+		frameFixture.label("copiedText2").requireText("");
+	}
+
 	
 	@After
 	public void signalSemaphoreResources(){
