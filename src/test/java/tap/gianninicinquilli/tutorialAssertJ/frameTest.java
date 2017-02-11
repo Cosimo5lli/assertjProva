@@ -47,7 +47,7 @@ public class frameTest {
 	public void shouldCopyTextInLabelWhenClickingButton2() {
 		frameFixture.textBox("textToCopy").enterText("Somebody");
 		frameFixture.button("copyButton2").click();
-		frameFixture.label("copiedText2").requireText("");
+		frameFixture.label("copiedText").requireText("");
 	}
 
 	
